@@ -278,12 +278,12 @@ span[class*="fw-light"] {
     text-shadow: 0 0 12px rgba(255, 232, 175, 0.34), 0 0 24px rgba(216, 178, 106, 0.24);
 }
 
-body a {
-    text-decoration: none;
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #1b0a01 !important;
+    color: var(--bs-body-color);
 }
-
-body a:hover {
-    color: var(--luxury-gold-soft);
 }
 
 @keyframes textPopup {
