@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Neethus Wellness Spa | Spa in BTM Layout, Bengaluru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="description" content="Neethus Wellness Spa is a luxury spa in BTM Layout, Bengaluru offering Ayurvedic massage, Thai massage, Swedish massage, deep tissue massage, Kerala massage and wellness therapies in Bangalore.">
+    <meta name="keywords" content="spa in Bangalore, spa in Bengaluru, massage spa Bangalore, wellness spa Bangalore, massage in Madivala, spa in Madivala, massage in BTM Layout, spa in BTM Layout, wellness centre Bangalore, Ayurvedic massage Bangalore, Thai massage Bangalore, Swedish massage Bangalore, deep tissue massage Bangalore, Kerala massage Bangalore, Moroccan bath Bangalore, Jacuzzi bath Bangalore, luxury spa Bangalore, best spa in Bangalore">
+    <meta property="og:title" content="Neethus Wellness Spa | Luxury Spa in BTM Layout, Bengaluru">
+    <meta property="og:description" content="Discover a premium wellness spa in BTM Layout, Bengaluru with Ayurvedic, Thai, Swedish, deep tissue, Kerala and luxury massage therapies for complete wellbeing.">
+    <!-- <meta property="og:type" content="website"> -->
+    <!-- <meta property="og:url" content="https://yourdomain.com/"> -->
+    <!-- <meta property="og:image" content="https://yourdomain.com/images/spa-thumbnail.jpg"> -->
+
+    <!-- Favicon -->
+    <link href="./img/neethus-spa-logo_icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="luxury-body">
+
+    <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="background: transparent; border: none;">
+                <div class="modal-body position-relative p-0">
+                    <button type="button" class="btn-close btn-close-white p-3" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; z-index: 1051; background-color: rgba(0, 0, 0, 0.55); border-radius: 50%;"></button>
+                    <div id="imagePreviewModalBody" class="d-flex justify-content-center align-items-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: rgb(24, 43, 41);">
+
+                <div class="modal-body position-relative p-0">
+                    <button type="button" class="btn-close bg-danger p-3" data-bs-dismiss="modal" aria-label="Close" style="position: absolute; top: 10px; right: 10px; z-index: 1051; color: white; font-weight: bold;">×</button>
+
+                    <div class="popup-slider-wrapper">
+                        <div class="popup-slider" id="popupSlider">
+                            <div class="popup-slide">
+                                <img src="img/popup-1-offer-image.jpg" class="img-fluid" alt="Offer Poster 1">
+                            </div>
+                            <div class="popup-slide">
+                                <img src="img/popup-2-offer-image.jpg" class="img-fluid" alt="Offer Poster 2">
+                            </div>
+                            <div class="popup-slide">
+                                <img src="img/popup-3-offer-image.jpg" class="img-fluid" alt="Offer Poster 3">
+                            </div>
+                        </div>
+                        <div class="popup-dots" aria-label="Offer poster navigation">
+                            <span class="popup-dot active" data-slide="0"></span>
+                            <span class="popup-dot" data-slide="1"></span>
+                            <span class="popup-dot" data-slide="2"></span>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3 mt-3">
+                        <a href="https://wa.me/919187974893" class="btn btn-whatsapp py-2 px-4 me-3 animated slideInRight">Whatsapp Now</a>
+                        <a href="tel:+919187974893" class="btn btn-outline-primary py-2 px-4 animated slideInRight">Call Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand">
+                     <img src="./img/neethus-wellness-spa-logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="services.html" class="nav-item nav-link">Services</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid hero-header mb-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <span class="luxury-badge animated slideInRight">Premium Ayurvedic Spa</span>
+                    <h3 class="fw-bold animated slideInRight" style="color: #ffffff; text-shadow: 0 0 18px rgba(216, 178, 106, 0.32);">The Ultimate<span class="luxury-highlight">Wellness</span> Experience</h3>
+                    <p class="text-white mb-4 animated slideInRight">Experience a luxury wellness retreat in BTM Layout, Bengaluru with Ayurvedic massage, Thai massage, deep tissue massage, Kerala special massage, and personalized spa therapies designed to restore calm, energy, and balance.</p>
+                    <a href="https://wa.me/919187974893" class="btn btn-whatsapp py-2 px-4 me-3 animated slideInRight">Whatsapp Now</a>
+                    <a href="tel:+919187974893" class="btn btn-outline-primary py-2 px-4 animated slideInRight">Call Now</a>
+                </div>
+                <div class="col-lg-6">
+                    <!-- <img class="img-fluid animated pulse infinite" src="img/main wall pic.jpg" alt=""> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Offer Section Start -->
+    <div class="container-fluid py-4">
+        <div class="container">
+            <div class="offer-banner wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-8">
+                        <span class="offer-label">Our Offer</span>
+                        <h2 class="mb-2">Luxury Spa Packages for a Fresh Start in Bengaluru</h2>
+                        <p class="mb-0">Enjoy expertly crafted Ayurveda, Thai, Swedish, deep tissue, Kerala and wellness spa treatments in BTM Layout, Bengaluru for a relaxing escape designed around your body and lifestyle.</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a href="https://wa.me/919187974893" class="btn btn-primary">Book Your Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Offer Section End -->
+
+    <!-- Staff & Nationality Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="staff-slider wow fadeInUp" data-wow-delay="0.1s">
+                <div class="staff-track">
+                    <div class="staff-card">
+                        <img src="img/staff_kerala.png" alt="Kerala staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Kerala</p>
+                            <p class="staff-name mb-0">Ashwathy</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_mumbai.png" alt="Mumbai staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Mumbai</p>
+                            <p class="staff-name mb-0">Pooja</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_tamil.png" alt="Tamil staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Tamil</p>
+                            <p class="staff-name mb-0">Meena</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_russia.png" alt="Russia staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Russia</p>
+                            <p class="staff-name mb-0">Anna</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_vietnam.png" alt="Vietnam staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Vietnam</p>
+                            <p class="staff-name mb-0">Yen</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_pak.png" alt="Pakistan staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Pakistan</p>
+                            <p class="staff-name mb-0">Hibah</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_arabic.png" alt="Arabic staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Arabic</p>
+                            <p class="staff-name mb-0">Rubia</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_thai.png" alt="Thailand staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Thailand</p>
+                            <p class="staff-name mb-0">Lamai</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_moroccan.png" alt="Moroccan staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Moroccan</p>
+                            <p class="staff-name mb-0">Lyla</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_egypt.png" alt="Egypt staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Egypt</p>
+                            <p class="staff-name mb-0">Marwa</p>
+                        </div>
+                    </div>
+                    <div class="staff-card">
+                        <img src="img/staff_philippines.png" alt="Philippines staff">
+                        <div class="staff-info text-center">
+                            <p class="staff-nationality mb-1">Philippines</p>
+                            <p class="staff-name mb-0">Ligaya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Staff & Nationality End -->
+
+    <!-- Services Start -->
+    <div class="container-fluid py-5" id="services">
+        <div class="container premium-ayurvedic-feature">
+            <h1 class="display-4 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s"><span class="fw-light luxury-highlight">Our</span> <span class="luxury-highlight">Services</span></h1>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/ayurvedic_spa.png" alt="Ayurvedic massage in Bengaluru">
+                </div>
+                <div class="col-lg-6 wow fadeIn feature-copy" data-wow-delay="0.1s">
+                    <span class="feature-badge">Luxury Ayurvedic Ritual</span>
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Ayurvedic </span>Massage</h1>
+                    <p class="mb-4">Experience a calming Ayurvedic massage in Bengaluru that blends traditional herbal techniques with modern wellness care. Our treatment helps relieve stress, improve circulation, ease body pain, and promote balance for a renewed sense of well-being.</p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves stress and fatigue</li>
+                        <li>Eases muscle aches and stiffness</li>
+                        <li>Improves blood circulation</li>
+                        <li>Supports better sleep and relaxation</li>
+                        <li>Restores calm, energy and vitality</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Text Column -->
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;">
+                        <span class="fw-light luxury-highlight">Aroma </span>Massage
+                    </h1>
+                    <p class="mb-4">
+                        Unwind with our aromatic massage in Bengaluru, where premium essential oils and gentle therapeutic strokes help calm the mind, ease muscle tension, and improve circulation. This soothing therapy is ideal for stress relief and complete relaxation after a busy day.
+                    </p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves stress and anxiety</li>
+                        <li>Reduces muscle tension and fatigue</li>
+                        <li>Improves blood circulation</li>
+                        <li>Promotes deep relaxation and better sleep</li>
+                        <li>Refreshes the body and mind</li>
+                        <li>Nourishes the skin with natural essential oils</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/aroma-massage.png" alt="Aroma Massage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/thai-sport-massage_thai.png">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Thai </span>Massage</h1>
+                    <p class="mb-4">Our Thai massage in Bangalore combines rhythmic pressure, stretching, and deep muscle work to ease tension, improve flexibility, and support overall recovery. It is a perfect choice for those who want active relief and a deeply calming wellness experience.
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves muscle pain and stiffness</li>
+                        <li>Supports faster muscle recovery</li>
+                        <li>Improves flexibility and range of motion</li>
+                        <li>Enhances blood circulation</li>
+                        <li>Reduces stress and body fatigue</li>
+                        <li>Helps prevent muscle injuries and promotes overall physical wellness</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Text Column -->
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;">
+                        <span class="fw-light luxury-highlight">Swedish </span>Massage
+                    </h1>
+                    <p class="mb-4">
+                        Enjoy a gentle Swedish massage in Bengaluru that uses flowing strokes to ease stress, improve circulation, and release muscular tension. This restorative treatment is ideal for relaxation, comfort, and a balanced sense of well-being.
+                    </p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves stress and promotes relaxation</li>
+                        <li>Improves blood circulation</li>
+                        <li>Reduces muscle tension and body aches</li>
+                        <li>Promotes better sleep and mental wellness</li>
+                        <li>Increases flexibility and overall comfort</li>
+                        <li>Refreshes the body and mind</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/swedish_massage_arabic.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/deep_tissue_tamil.png">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Deep Tissue </span>Massage</h1>
+                    <p class="mb-4">Our deep tissue massage in Bangalore targets deeper muscle layers to release chronic tension, ease stiffness, and support recovery. It is a highly effective treatment for back discomfort, long working hours, and stress-related body fatigue.</p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves chronic muscle pain and tension</li>
+                        <li>Improves blood circulation</li>
+                        <li>Reduces stiffness and inflammation</li>
+                        <li>Enhances flexibility and mobility</li>
+                        <li>Speeds up muscle recovery</li>
+                        <li>Promotes deep relaxation and overall wellness</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Text Column -->
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;">
+                        <span class="fw-light luxury-highlight">Four Hand </span>Massage
+                    </h1>
+                    <p class="mb-4">
+                        Treat yourself to a deeply soothing four hand massage in Bengaluru, where two therapists work together to ease tension, improve circulation, and create a wonderfully immersive wellness experience.
+                    </p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Synchronized massage by two skilled therapists</li>
+                        <li>Relieves stress and deep muscle tension</li>
+                        <li>Improves blood circulation</li>
+                        <li>Promotes total body relaxation</li>
+                        <li>Reduces fatigue and restores energy</li>
+                        <li>Leaves you feeling refreshed, balanced, and rejuvenated</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/four_hand_russia_vietnam.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/hot_stone_egypt.png">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Kerala Special </span>Massage</h1>
+                    <p class="mb-4">Our Kerala special massage offers a traditional wellness ritual rooted in Ayurveda, combining warm oil therapy and therapeutic touch to relieve stress, restore mobility, and bring deep calm to the body.</p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves muscle tension and body pain</li>
+                        <li>Improves blood circulation</li>
+                        <li>Reduces stress and anxiety</li>
+                        <li>Promotes deep relaxation</li>
+                        <li>Helps improve sleep quality</li>
+                        <li>Restores energy and overall well-being</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Text Column -->
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;">
+                        <span class="fw-light luxury-highlight">Special Oil </span>Massage
+                    </h1>
+                    <p class="mb-4">
+                        Experience a luxurious oil massage in Bangalore designed to relax tight muscles, improve circulation, and provide a rejuvenating sensation from head to toe with a soothing wellness finish.
+                    </p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relieves neck, shoulder, and upper back tension</li>
+                        <li>Reduces stress, headaches, and mental fatigue</li>
+                        <li>Improves blood circulation</li>
+                        <li>Eases muscle stiffness and pain</li>
+                        <li>Promotes relaxation and better sleep</li>
+                        <li>Refreshes the body and mind</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+
+                <!-- Image Column -->
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/head_nec_shoulder_pakistani.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/moroccan_bath_massage.png" alt="Moroccan Bath with Massage">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Moroccan Bath </span>with Massage</h1>
+                    <p class="mb-4">Our Moroccan bath with massage in Bengaluru combines a detoxifying bath ritual with soothing massage to cleanse, soften the skin, and restore a deep sense of relaxation.</p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Deeply cleanses and exfoliates the skin</li>
+                        <li>Removes dead skin cells for a soft, glowing complexion</li>
+                        <li>Relieves stress and muscle tension</li>
+                        <li>Improves blood circulation</li>
+                        <li>Detoxifies and refreshes the body</li>
+                        <li>Promotes complete relaxation and overall well-being</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp luxury-highlight" data-wow-delay="0.1s"><span class="fw-light">Jacuzzi Bath </span>with Massage</h1>
+                    <p class="mb-4">The Jacuzzi bath with massage is designed for deep relaxation, soothing hydrotherapy, and stress relief while improving circulation and calming tired muscles.</p>
+                    <ul class="mb-4 text-white-50">
+                        <li>Relaxes muscles with warm hydrotherapy</li>
+                        <li>Relieves stress and body fatigue</li>
+                        <li>Improves blood circulation</li>
+                        <li>Reduces muscle pain and stiffness</li>
+                        <li>Promotes deep relaxation and better sleep</li>
+                        <li>Leaves you refreshed, revitalized, and rejuvenated</li>
+                    </ul>
+                    <a class="btn btn-whatsapp py-2 px-4" href="https://wa.me/919187974893">Whatsapp Now</a>
+                    <a class="btn btn-call py-2 px-4 ms-2" href="tel:+919187974893">Call Now</a>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid animated pulse infinite" src="img/jacuzzi_massage_philippines.png" alt="Jacuzzi Bath with Massage">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="row g-5 justify-content-center text-center">
+                <h1 class="display-4 mb-5 wow fadeInUp" data-wow-delay="0.1s"><span class="fw-light">About</span> <span class="luxury-highlight">Us</span></h1>
+                <div class="col-lg-10 wow fadeIn" data-wow-delay="0.1s">
+                    <img class="img-fluid rounded-4 mb-4 about-banner-image" src="img/welcoming_banner.jpg" alt="Neethus Wellness Spa welcome banner">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <h1 class="mb-4 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;">Neethus <span class="fw-light luxury-highlight">Wellness Spa</span></h1>
+                    <p class="mb-4">At <strong>Neethus Wellness Spa</strong>, we believe true wellness begins with comfort, care, and personalised attention. Located in <strong>BTM 1st Stage, Bengaluru</strong>, our spa is designed for residents and visitors seeking a peaceful, restorative escape in the heart of the city.</p>
+                    <p class="mb-4">From <strong>Ayurvedic Massage</strong> to <strong>Thai Massage, Swedish Massage, Deep Tissue Massage, Kerala Special Massage, Moroccan Bath, Jacuzzi Bath, and aroma therapies</strong>, every treatment is crafted to relieve stress, improve circulation, and restore balance to the body and mind.</p>
+                    <p class="mb-4">Our wellness centre combines premium oils, soothing ambience, and experienced therapists to create a refined spa experience for your daily wellbeing.</p>
+                    <p class="mb-4">Whether you are in Madivala, BTM Layout, or anywhere in Bengaluru, let us help you relax, recharge, and feel your best.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Gallery Start -->
+    <!-- <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="text-primary mb-3"><span class="fw-light text-dark">Our Spa</span> Gallery</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-fluid rounded" src="img/gallery-1.jpeg" alt="Spa Photo 1">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-fluid rounded" src="img/gallery-2.jpeg" alt="Spa Photo 2">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img class="img-fluid rounded" src="img/gallery-3.jpeg" alt="Spa Photo 3">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Gallery End -->
+
+
+    <!-- Google Profile & Gallery Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="google-profile-card">
+                        <span class="eyebrow">Google Profile</span>
+                        <h2 class="mb-3" style="color: #ffffff;">Discover Neethus Wellness Spa on Google</h2>
+                        <p class="mb-4">Find our location, directions, and local wellness updates for your next visit to a premium spa in BTM Layout, Bengaluru.</p>
+                        <a class="btn btn-primary" href="https://maps.google.com/?q=Urban+Vibes+Mall+BTM+1st+Stage+20th+Main+Road+Near+Maruthi+Nagar+Main+Road+Bengaluru+Karnataka+560029" target="_blank" rel="noopener noreferrer">Open Google Map</a>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="image-slider-frame">
+                        <div class="image-slider-track google-profile-gallery">
+                            <div class="image-slide"><img src="img/Google-1.PNG" alt="Google profile image 1"></div>
+                            <div class="image-slide"><img src="img/Google-2.PNG" alt="Google profile image 2"></div>
+                            <div class="image-slide"><img src="img/Google-3.PNG" alt="Google profile image 3"></div>
+                            <div class="image-slide"><img src="img/Google-4.PNG" alt="Google profile image 4"></div>
+                            <div class="image-slide"><img src="img/Google-5.PNG" alt="Google profile image 5"></div>
+                            <div class="image-slide"><img src="img/Google-6.PNG" alt="Google profile image 6"></div>
+                            <div class="image-slide"><img src="img/Google-7.PNG" alt="Google profile image 7"></div>
+                            <div class="image-slide"><img src="img/Google-8.PNG" alt="Google profile image 8"></div>
+                            <div class="image-slide"><img src="img/Google-9.PNG" alt="Google profile image 9"></div>
+                            <div class="image-slide"><img src="img/Google-10.jpeg" alt="Google profile image 10"></div>
+                            <div class="image-slide"><img src="img/Google-1.PNG" alt="Google profile image 1"></div>
+                            <div class="image-slide"><img src="img/Google-2.PNG" alt="Google profile image 2"></div>
+                            <div class="image-slide"><img src="img/Google-3.PNG" alt="Google profile image 3"></div>
+                            <div class="image-slide"><img src="img/Google-4.PNG" alt="Google profile image 4"></div>
+                            <div class="image-slide"><img src="img/Google-5.PNG" alt="Google profile image 5"></div>
+                            <div class="image-slide"><img src="img/Google-6.PNG" alt="Google profile image 6"></div>
+                            <div class="image-slide"><img src="img/Google-7.PNG" alt="Google profile image 7"></div>
+                            <div class="image-slide"><img src="img/Google-8.PNG" alt="Google profile image 8"></div>
+                            <div class="image-slide"><img src="img/Google-9.PNG" alt="Google profile image 9"></div>
+                            <div class="image-slide"><img src="img/Google-10.jpeg" alt="Google profile image 10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Google Profile & Gallery End -->
+
+    <!-- Contact Info Start -->
+    <div class="container-fluid py-5" id="contact">
+        <div class="container">
+            <div class="row g-4">
+                <h1 class="display-4 mb-5 text-center wow fadeInUp" data-wow-delay="0.1s"><span class="fw-light">Contact</span> <span class="luxury-highlight">Us</span></h1>
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="contact-info-item position-relative bg-primary text-center p-3 h-100 d-flex">
+                        <div class="border py-5 px-3 flex-fill">
+                            <i class="fa fa-map-marker-alt fa-3x text-dark mb-4"></i>
+                            <h5 class="text-white">Address</h5>
+                            <h5 class="fw-light text-white">
+                                Urban Vibes Mall, BTM 1st Stage, 20th Main Rd, Near Maruthi Nagar Main Road, Bengaluru, Karnataka 560029
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="contact-info-item position-relative bg-primary text-center p-3 h-100 d-flex">
+                        <div class="border py-5 px-3 flex-fill">
+                            <i class="fa fa-phone-alt fa-3x text-dark mb-4"></i>
+                            <h5 class="text-white">Call Us</h5>
+                            <h5 class="fw-light text-white">+91 91879 74893</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="contact-info-item position-relative bg-primary text-center p-3 h-100 d-flex">
+                        <div class="border py-5 px-3 flex-fill">
+                            <i class="fa fa-envelope fa-3x text-dark mb-4"></i>
+                            <h5 class="text-white">Mail Us</h5>
+                            <h5 class="fw-light text-white text-break">hello@neethuswellnessspa.in</h5>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-- Contact Info End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto wow fadeIn text-center" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-5 wow fadeInUp" data-wow-delay="0.1s" style="color: #ffffff;"><span class="fw-light luxury-highlight">If You Have Any Query,</span> Please Contact Us</h1>
+            </div>
+            <div class="g-5 d-flex justify-content-center">
+                <div class="col-lg-5 wow fadeIn d-flex justify-content-center">
+                    <div class="map-link-wrapper" style="position:relative; width:100%;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.401629000000!2d55.3260323!3d25.2597819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d9035786649%3A0xe48bd3932c4d63c1!2sNeethus%20Spa!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0; pointer-events:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <a href="https://maps.app.goo.gl/dcCv6onh5vuG2ULL9" target="_blank" rel="noopener noreferrer" style="position:absolute; inset:0; z-index:2; display:block;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-white footer" style="position: relative; overflow: hidden;">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img src="img/neethus-spa.png" alt="Neethus Wellness Spa" style="max-width: 180px; width: 100%; display: block;">
+                    </a>
+                    <p class="mb-0"><strong>Neethus Wellness Spa</strong> is a luxury spa in BTM Layout, Bengaluru offering <strong>Ayurvedic, Thai, Swedish, Deep Tissue, Kerala Special, Aroma, Moroccan Bath, and Jacuzzi Bath massages</strong> for stress relief, wellness, and total relaxation.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="mb-4">Get In Touch</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i>Urban Vibes Mall, BTM 1st Stage, 20th Main Rd, Near Maruthi Nagar Main Road, Bengaluru, Karnataka 560029</p>
+                    <p><i class="fa fa-phone-alt me-3"></i>+91 91879 74893</p>
+                    <p><i class="fa fa-envelope me-3"></i>hello@neethuswellnessspa.in</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-primary me-1" href="https://wa.me/919187974893"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-square btn-outline-primary me-1" href="https://maps.google.com/?q=Urban+Vibes+Mall+BTM+1st+Stage+20th+Main+Road+Near+Maruthi+Nagar+Main+Road+Bengaluru+Karnataka+560029"><i class="fab fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div>
+                    <div class="text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Neethus Wellness Spa</a>, All Rights Reserved.
+                        Designed By <a class="border-bottom" href="#">Hotzin Digital</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+        var popupSliderInterval;
+
+        function startPopupSlider() {
+            var $slider = $('#popupSlider');
+            var $dots = $('.popup-dot');
+
+            if ($slider.length === 0) {
+                return;
+            }
+
+            var slideIndex = 0;
+            var totalSlides = $slider.find('.popup-slide').length;
+
+            function showSlide(index) {
+                slideIndex = (index + totalSlides) % totalSlides;
+                $slider.css('transform', 'translateX(-' + (slideIndex * 100) + '%)');
+                $dots.removeClass('active').eq(slideIndex).addClass('active');
+            }
+
+            clearInterval(popupSliderInterval);
+            showSlide(0);
+
+            $dots.off('click').on('click', function () {
+                showSlide(parseInt($(this).data('slide'), 10));
+            });
+
+            popupSliderInterval = setInterval(function () {
+                showSlide(slideIndex + 1);
+            }, 3000);
+        }
+
+        $(window).on('load', function () {
+            $('#myModal').modal('show');
+        });
+
+        $(document).ready(function () {
+            $('.google-profile-gallery .image-slide').on('click', function (e) {
+                e.preventDefault();
+                var $img = $(this).find('img');
+                var src = $img.attr('src');
+                var alt = $img.attr('alt') || 'Google profile image';
+
+                if (!src) {
+                    return;
+                }
+
+                $('#imagePreviewModalBody').html(
+                    '<img src="' + src + '" alt="' + alt + '" class="img-fluid rounded shadow" style="max-height: 80vh; width: auto; max-width: 100%;">'
+                );
+                $('#imagePreviewModal').modal('show');
+            });
+
+            startPopupSlider();
+
+            // Native horizontal scrolling for image sliders; no custom drag handler required.
+            // Slider containers use CSS overflow-x and scroll snap for smoother touch behavior.
+
+            var $navbarCollapse = $('#navbarCollapse');
+            var $navbarToggler = $('.navbar-toggler');
+
+            function toggleMenuBodyLock() {
+                if ($navbarCollapse.hasClass('show')) {
+                    $('body').addClass('menu-open');
+                } else {
+                    $('body').removeClass('menu-open');
+                }
+            }
+
+            $navbarCollapse.on('shown.bs.collapse hidden.bs.collapse', function () {
+                toggleMenuBodyLock();
+            });
+
+            $navbarCollapse.on('click', '.nav-link', function () {
+                $navbarCollapse.collapse('hide');
+            });
+
+            $navbarToggler.on('click', function (e) {
+                e.stopPropagation();
+            });
+
+            $(document).on('click', function (e) {
+                if (
+                    $navbarCollapse.hasClass('show') &&
+                    !$navbarCollapse.is(e.target) &&
+                    $navbarCollapse.has(e.target).length === 0 &&
+                    !$navbarToggler.is(e.target) &&
+                    $navbarToggler.has(e.target).length === 0
+                ) {
+                    $navbarCollapse.collapse('hide');
+                }
+            });
+
+            $(window).on('resize', function () {
+                if ($(window).width() >= 992) {
+                    $navbarCollapse.collapse('hide');
+                    $('body').removeClass('menu-open');
+                }
+            });
+
+            $('#myModal').on('shown.bs.modal', function () {
+                $('.modal-backdrop').addClass('modal-backdrop-blur');
+                startPopupSlider();
+            });
+
+            $('#myModal').on('hidden.bs.modal', function () {
+                $('.modal-backdrop').removeClass('modal-backdrop-blur');
+                clearInterval(popupSliderInterval);
+            });
+        });
+    </script>
+
+    <div class="container-fluid bg-dark py-5">
+        <div class="container text-center text-white-50">
+            <p class="mb-2">
+                <a href="index.html" class="text-white-50 me-3">Home</a>
+                <a href="about.html" class="text-white-50 me-3">About</a>
+                <a href="services.html" class="text-white-50 me-3">Services</a>
+                <a href="contact.html" class="text-white-50">Contact</a>
+            </p>
+            <p class="mb-0">© 2026 Neethus Wellness Spa. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
