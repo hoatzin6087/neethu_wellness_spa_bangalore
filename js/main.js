@@ -26,16 +26,24 @@
     });
     
     
-    // Back to top button
-    $(window).scroll(function () {
+    // Back to top button (supports legacy .back-to-top and new #scrollToTop)
+    $(window).on('scroll.backtop', function () {
         if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
+            $('.back-to-top, #scrollToTop, .footer_backtop').fadeIn('slow');
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top, #scrollToTop, .footer_backtop').fadeOut('slow');
         }
     });
-    $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+
+    // click handler for both
+    $(document).on('click', '#scrollToTop, .back-to-top, .footer_backtop', function (e) {
+        e.preventDefault();
+        var target = $($(this).attr('href'));
+        if (target && target.length) {
+            $('html, body').animate({ scrollTop: target.offset().top }, 900, 'easeInOutExpo');
+        } else {
+            $('html, body').animate({ scrollTop: 0 }, 900, 'easeInOutExpo');
+        }
         return false;
     });
 
@@ -267,4 +275,81 @@
     });
 
 })(jQuery);
+
+/* Contact card entrance trigger: add .animate-in when card scrolls into view */
+(function () {
+    'use strict';
+    function initContactCardObserver() {
+        var el = document.querySelector('.contact-single-card');
+        if (!el) return;
+
+        if ('IntersectionObserver' in window) {
+            var obs = new IntersectionObserver(function (entries, observer) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        el.classList.add('animate-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            obs.observe(el);
+        } else {
+            // fallback: add class after small delay
+            setTimeout(function () { el.classList.add('animate-in'); }, 300);
+        }
+    }
+
+    // init on DOMContentLoaded (safe for SPA static site)
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initContactCardObserver);
+    } else {
+        initContactCardObserver();
+    }
+})();
+
+
+/* Navbar toggler icon animation: toggle .animate on click and sync with collapse events */
+(function () {
+    'use strict';
+    function initNavbarToggler() {
+        var $ = window.jQuery;
+        var togglers = document.querySelectorAll('.navbar-toggler');
+        if (!togglers || !togglers.length) return;
+
+        togglers.forEach(function (btn) {
+            var icon = btn.querySelector('.navbar-toggler-icon');
+            if (!icon) return;
+
+            // toggle visual state on click (optimistic)
+            btn.addEventListener('click', function () {
+                btn.classList.toggle('animate');
+            });
+
+            // sync with Bootstrap collapse events using jQuery if available
+            var targetSelector = btn.getAttribute('data-bs-target') || btn.getAttribute('data-target');
+            if (targetSelector && typeof $ !== 'undefined') {
+                var $target = $(targetSelector);
+                if ($target.length) {
+                    // when collapse has fully opened, ensure toggler shows X
+                    $target.on('shown.bs.collapse', function () { btn.classList.add('animate'); });
+                    // when collapse has fully hidden, ensure toggler shows hamburger
+                    $target.on('hidden.bs.collapse', function () { btn.classList.remove('animate'); });
+
+                    // set initial state based on current collapse visibility
+                    if ($target.hasClass('show')) {
+                        btn.classList.add('animate');
+                    } else {
+                        btn.classList.remove('animate');
+                    }
+                }
+            }
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initNavbarToggler);
+    } else {
+        initNavbarToggler();
+    }
+})();
 
