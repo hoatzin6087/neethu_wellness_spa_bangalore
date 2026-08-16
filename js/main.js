@@ -83,9 +83,11 @@
 
     }
 
-    setInterval(function () {
-        countDownTimer();
-    }, 1000);
+    if ($('#cdt-days, #cdt-hours, #cdt-minutes, #cdt-seconds').length) {
+        setInterval(function () {
+            countDownTimer();
+        }, 1000);
+    }
 
 
     // Testimonials carousel
