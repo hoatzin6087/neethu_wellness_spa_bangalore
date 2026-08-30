@@ -22,14 +22,12 @@
           'ad_personalization': 'granted',
           'analytics_storage': 'granted'
         });
-      }
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var acceptButton = document.getElementById('accept-all-button');
-        if (acceptButton) {
-          acceptButton.addEventListener('click', allConsentGranted);
+        var consentButton = document.getElementById('accept-all-button');
+        if (consentButton) {
+          consentButton.style.display = 'none';
         }
-      });
+      }
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18402382400"></script>
@@ -79,8 +77,6 @@
 </head>
 
 <body class="luxury-body">
-
-    <button id="accept-all-button" type="button" onclick="allConsentGranted()" style="margin: 20px;">Accept All</button>
 
     <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
@@ -185,6 +181,10 @@
     <!-- Hero End -->
 
     <!-- Offer Section Start -->
+    <div id="accept-all-button-wrapper" style="position: fixed; left: 20px; bottom: 20px; z-index: 9999;">
+        <button id="accept-all-button" type="button" onclick="allConsentGranted(); return false;" style="background: #d4a758; color: #111; border: none; padding: 12px 20px; border-radius: 999px; font-weight: 700; box-shadow: 0 8px 22px rgba(0,0,0,0.2);">Accept All</button>
+    </div>
+
     <div class="container-fluid py-4">
         <div class="container">
             <div class="offer-banner wow fadeInUp" data-wow-delay="0.1s">
