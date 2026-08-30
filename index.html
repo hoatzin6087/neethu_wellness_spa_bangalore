@@ -4,7 +4,10 @@
 <head>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      window.gtag = window.gtag || function() {
+        window.dataLayer.push(arguments);
+      };
+
       gtag('consent', 'default', {
         'ad_storage': 'denied',
         'ad_user_data': 'denied',
@@ -20,14 +23,22 @@
           'analytics_storage': 'granted'
         });
       }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var acceptButton = document.getElementById('accept-all-button');
+        if (acceptButton) {
+          acceptButton.addEventListener('click', allConsentGranted);
+        }
+      });
     </script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18402382400"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+      window.gtag = window.gtag || function() {
+        window.dataLayer.push(arguments);
+      };
       gtag('js', new Date());
-
       gtag('config', 'AW-18402382400');
     </script>
     <meta charset="utf-8">
@@ -69,7 +80,7 @@
 
 <body class="luxury-body">
 
-    <button type="button" onclick="allConsentGranted()" style="margin: 20px;">Accept All</button>
+    <button id="accept-all-button" type="button" onclick="allConsentGranted()" style="margin: 20px;">Accept All</button>
 
     <div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
